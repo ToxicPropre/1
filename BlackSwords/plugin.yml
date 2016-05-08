@@ -1,0 +1,10 @@
+main: net.arkube.blackswords.BlackSwords
+name: BlackSword
+version: 0.1
+commands:
+    blackcraft:
+        description: Commande de craft rapide.
+    rank:
+        description: Commande réservé aux Administrateur!
+    monnaie:
+        description: Commande réservé aux Administrateur!
