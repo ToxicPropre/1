@@ -1,5 +1,6 @@
 package net.arkube.blackswords.events.players;
 
+import net.arkube.blackswords.functions.Account;
 import net.minecraft.server.v1_9_R1.AttributeInstance;
 
 import org.bukkit.attribute.Attribute;
@@ -16,6 +17,9 @@ public class PlayerJoin implements Listener {
 		
 		AttributeInstance ai = (AttributeInstance) player.getAttribute(Attribute.GENERIC_ATTACK_SPEED);
 		ai.setValue(16);
+		
+		new Account(player).createAccount();
+		new Account(player).changeName();
 		
 		event.setJoinMessage("§7[§a+§7]"+player.getName());
 	}
