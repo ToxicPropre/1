@@ -3,7 +3,9 @@ package net.arkube.blackswords.manager;
 import net.arkube.blackswords.BlackSwords;
 import net.arkube.blackswords.events.inventory.InventoryClick;
 import net.arkube.blackswords.events.players.PlayerBreak;
+import net.arkube.blackswords.events.players.PlayerChat;
 import net.arkube.blackswords.events.players.PlayerCraft;
+import net.arkube.blackswords.events.players.PlayerDeath;
 import net.arkube.blackswords.events.players.PlayerJoin;
 import net.arkube.blackswords.events.players.PlayerLeave;
 
@@ -25,6 +27,8 @@ public class EventsManager {
 		pm.registerEvents(new PlayerBreak(), pl);
 		pm.registerEvents(new PlayerCraft(), pl);
 		pm.registerEvents(new InventoryClick(), pl);
+		pm.registerEvents(new PlayerDeath(), pl);
+		pm.registerEvents(new PlayerChat(), pl);
 	}
 	
 }
