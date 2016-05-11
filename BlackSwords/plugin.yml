@@ -8,3 +8,7 @@ commands:
         description: Commande réservé aux Administrateur!
     monnaie:
         description: Commande réservé aux Administrateur!
+    craft:
+        description: Ouvre un inventaire de craft!
+    repair:
+        description: Repare l'item dans ta main!
